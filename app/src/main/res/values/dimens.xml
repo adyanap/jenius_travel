@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_small">10dp</dimen>
+    <dimen name="margin_default">30dp</dimen>
+    <dimen name="margin_medium">45dp</dimen>
+    <dimen name="margin_large">60dp</dimen>
+    <dimen name="margin_xl">80dp</dimen>
+
+    <dimen name="font_headline">30sp</dimen>
+</resources>

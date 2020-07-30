@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="text_login">Masuk</string>
+    <string name="text_username">Nama User</string>
+    <string name="hint_username">Input nama user disini...</string>
+    <string name="text_password">Kata Sandi</string>
+    <string name="hint_password">Input kata sandi disini...</string>
+    <string name="button_signin">Masuk</string>
+</resources>
