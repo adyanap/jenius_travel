@@ -7,4 +7,5 @@
     <dimen name="margin_xl">80dp</dimen>
 
     <dimen name="font_headline">30sp</dimen>
+    <dimen name="font_default">18sp</dimen>
 </resources>

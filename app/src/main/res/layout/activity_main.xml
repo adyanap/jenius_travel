@@ -1,73 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_login"
-    >
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/jenius_logo"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:layout_margin="@dimen/margin_default"
-        />
+<!--    <Button-->
+<!--        android:id="@+id/button_profile"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Profile"/>-->
 
-    <TextView
-        android:id="@+id/text_login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/text_login"
-        android:textColor="@android:color/white"
-        android:textStyle="bold"
-        android:textSize="@dimen/font_headline"
-        android:layout_marginStart="@dimen/margin_medium"
-        android:layout_marginTop="@dimen/margin_medium"/>
+<!--    <Button-->
+<!--        android:id="@+id/button_travel"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Travel"/>-->
 
-    <LinearLayout
+
+   <FrameLayout
+       android:id="@+id/frame_container"
+       android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:layout_weight="1"
+       />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/button_nav"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/text_login"
-        android:orientation="vertical"
-        android:gravity="center"
-        android:padding="@dimen/margin_default"
-        android:layout_marginTop="@dimen/margin_xl"
-        >
+        android:background="?android:attr/windowBackground"
+        app:menu="@menu/navigation_menu"
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/text_username"
         />
 
-        <EditText
-            android:id="@+id/input_username"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="text"
-            android:hint="@string/hint_username"/>
-
-        <TextView
-            android:layout_marginTop="@dimen/margin_small"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/text_password"/>
-
-        <EditText
-            android:id="@+id/input_password"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPassword"
-            android:hint="@string/hint_password"
-            />
-
-        <Button
-            style="@style/PrimaryButton"
-            android:id="@+id/button_signin"
-            android:text="@string/button_signin"
-            android:layout_marginTop="@dimen/margin_default"
-            />
-
-    </LinearLayout>
-</RelativeLayout>
+</LinearLayout>

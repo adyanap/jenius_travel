@@ -8,4 +8,11 @@
     <string name="hint_password">Input your password here...</string>
     <string name="button_signin">Sign In</string>
 
+    <string name="label_name">Name</string>
+    <string name="label_phone">Phone</string>
+    <string name="label_address">Address</string>
+
+    <string name="menu_profile">Profile</string>
+    <string name="menu_travel_list">Travel List</string>
+
 </resources>
