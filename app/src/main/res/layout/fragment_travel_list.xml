@@ -4,14 +4,36 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".TravelListFragment"
-    android:gravity="center"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     >
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:id="@+id/text_travel_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:text="Travel List" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Where would you like to go?" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recylerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Hello Travel List" />
+        android:layout_marginTop="10dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        />
 
 </LinearLayout>
